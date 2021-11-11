@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="admaaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityType Name="Addresses">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="GovermentID" Type="int" Nullable="false" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="AreaID" Type="int" />
+          <Property Name="AddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Church">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Education">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Goverment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Khadma">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Type" Type="int" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" />
+          <Property Name="Birthday" Type="datetime2" Precision="7" />
+          <Property Name="Mobile" Type="nchar" MaxLength="11" />
+          <Property Name="Telephone" Type="varchar" MaxLength="20" />
+          <Property Name="BarCode" Type="nvarchar" MaxLength="250" />
+          <Property Name="EducationID" Type="int" />
+          <Property Name="QualificationID" Type="int" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="RecognitionFather" Type="nvarchar" MaxLength="250" />
+          <Property Name="KhadmaID" Type="int" />
+          <Property Name="Khadem" Type="nvarchar" MaxLength="250" />
+          <Property Name="Gender" Type="bit" />
+          <Property Name="SocialStatus" Type="nvarchar" MaxLength="50" />
+          <Property Name="PersonType" Type="int" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="3" />
+          <Property Name="Address" Type="nvarchar" MaxLength="250" />
+          <Property Name="Notes" Type="nvarchar(max)" />
+          <Property Name="CurchID" Type="int" />
+          <Property Name="AddressID" Type="int" />
+          <Property Name="ServesID" Type="int" />
+        </EntityType>
+        <EntityType Name="ProfileServices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="BarCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="EnterDate" Type="datetime" Nullable="false" />
+          <Property Name="Attachment" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Qualification">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="service">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServiceToken">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="BarCode" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="DateTime" Type="datetime" Nullable="false" />
+          <Property Name="Note" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_Addresses_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Addresses">
+              <PropertyRef Name="AreaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Addresses_City">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Addresses">
+              <PropertyRef Name="CityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Addresses_Goverment">
+          <End Role="Goverment" Type="Self.Goverment" Multiplicity="1" />
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Goverment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Addresses">
+              <PropertyRef Name="GovermentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_Addresses">
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Addresses">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_Church">
+          <End Role="Church" Type="Self.Church" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Church">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="CurchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_Education">
+          <End Role="Education" Type="Self.Education" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Education">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="EducationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_Khadma">
+          <End Role="Khadma" Type="Self.Khadma" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Khadma">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="KhadmaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_Qualification">
+          <End Role="Qualification" Type="Self.Qualification" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Qualification">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="QualificationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileServices_ProfileServices1">
+          <End Role="ProfileServices" Type="Self.ProfileServices" Multiplicity="1" />
+          <End Role="ProfileServices1" Type="Self.ProfileServices" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ProfileServices">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProfileServices1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileServices_service">
+          <End Role="service" Type="Self.service" Multiplicity="1" />
+          <End Role="ProfileServices" Type="Self.ProfileServices" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProfileServices">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServiceToken_service">
+          <End Role="service" Type="Self.service" Multiplicity="1" />
+          <End Role="ServiceToken" Type="Self.ServiceToken" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ServiceToken">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="admaaModelStoreContainer">
+          <EntitySet Name="Addresses" EntityType="Self.Addresses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Church" EntityType="Self.Church" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Education" EntityType="Self.Education" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Goverment" EntityType="Self.Goverment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Khadma" EntityType="Self.Khadma" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProfileServices" EntityType="Self.ProfileServices" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Qualification" EntityType="Self.Qualification" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="service" EntityType="Self.service" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServiceToken" EntityType="Self.ServiceToken" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Addresses_Area" Association="Self.FK_Addresses_Area">
+            <End Role="Area" EntitySet="Area" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Addresses_City" Association="Self.FK_Addresses_City">
+            <End Role="City" EntitySet="City" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Addresses_Goverment" Association="Self.FK_Addresses_Goverment">
+            <End Role="Goverment" EntitySet="Goverment" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Addresses" Association="Self.FK_Person_Addresses">
+            <End Role="Addresses" EntitySet="Addresses" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Church" Association="Self.FK_Person_Church">
+            <End Role="Church" EntitySet="Church" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Education" Association="Self.FK_Person_Education">
+            <End Role="Education" EntitySet="Education" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Khadma" Association="Self.FK_Person_Khadma">
+            <End Role="Khadma" EntitySet="Khadma" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Qualification" Association="Self.FK_Person_Qualification">
+            <End Role="Qualification" EntitySet="Qualification" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileServices_ProfileServices1" Association="Self.FK_ProfileServices_ProfileServices1">
+            <End Role="ProfileServices" EntitySet="ProfileServices" />
+            <End Role="ProfileServices1" EntitySet="ProfileServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileServices_service" Association="Self.FK_ProfileServices_service">
+            <End Role="service" EntitySet="service" />
+            <End Role="ProfileServices" EntitySet="ProfileServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServiceToken_service" Association="Self.FK_ServiceToken_service">
+            <End Role="service" EntitySet="service" />
+            <End Role="ServiceToken" EntitySet="ServiceToken" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="admaaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Area" Relationship="Self.FK_Addresses_Area" FromRole="Addresses" ToRole="Area" />
+          <NavigationProperty Name="City" Relationship="Self.FK_Addresses_City" FromRole="Addresses" ToRole="City" />
+          <NavigationProperty Name="Goverment" Relationship="Self.FK_Addresses_Goverment" FromRole="Addresses" ToRole="Goverment" />
+          <NavigationProperty Name="People" Relationship="Self.FK_Person_Addresses" FromRole="Addresses" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Addresses" Relationship="Self.FK_Addresses_Area" FromRole="Area" ToRole="Addresses" />
+        </EntityType>
+        <EntityType Name="Church">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="People" Relationship="Self.FK_Person_Church" FromRole="Church" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Addresses" Relationship="Self.FK_Addresses_City" FromRole="City" ToRole="Addresses" />
+        </EntityType>
+        <EntityType Name="Education">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="People" Relationship="Self.FK_Person_Education" FromRole="Education" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Goverment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Addresses" Relationship="Self.FK_Addresses_Goverment" FromRole="Goverment" ToRole="Addresses" />
+        </EntityType>
+        <EntityType Name="Khadma">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="People" Relationship="Self.FK_Person_Khadma" FromRole="Khadma" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Nullable="false" />
+          <Property Name="Type" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="DateTime" Precision="7" />
+          <Property Name="Mobile" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BarCode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RecognitionFather" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Khadem" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="Boolean" />
+          <Property Name="SocialStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PersonType" Type="Int32" />
+          <Property Name="Salary" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ServesID" Type="Int32" />
+          <NavigationProperty Name="Address1" Relationship="Self.FK_Person_Addresses" FromRole="Person" ToRole="Addresses" />
+          <NavigationProperty Name="Church" Relationship="Self.FK_Person_Church" FromRole="Person" ToRole="Church" />
+          <NavigationProperty Name="Education" Relationship="Self.FK_Person_Education" FromRole="Person" ToRole="Education" />
+          <NavigationProperty Name="Khadma" Relationship="Self.FK_Person_Khadma" FromRole="Person" ToRole="Khadma" />
+          <NavigationProperty Name="Qualification" Relationship="Self.FK_Person_Qualification" FromRole="Person" ToRole="Qualification" />
+        </EntityType>
+        <EntityType Name="ProfileService">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="BarCode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EnterDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Attachment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProfileServices1" Relationship="Self.FK_ProfileServices_ProfileServices1" FromRole="ProfileServices" ToRole="ProfileServices1" />
+          <NavigationProperty Name="ProfileService1" Relationship="Self.FK_ProfileServices_ProfileServices1" FromRole="ProfileServices1" ToRole="ProfileServices" />
+          <NavigationProperty Name="service" Relationship="Self.FK_ProfileServices_service" FromRole="ProfileServices" ToRole="service" />
+        </EntityType>
+        <EntityType Name="Qualification">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="People" Relationship="Self.FK_Person_Qualification" FromRole="Qualification" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="service">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ProfileServices" Relationship="Self.FK_ProfileServices_service" FromRole="service" ToRole="ProfileServices" />
+          <NavigationProperty Name="ServiceTokens" Relationship="Self.FK_ServiceToken_service" FromRole="service" ToRole="ServiceToken" />
+        </EntityType>
+        <EntityType Name="ServiceToken">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="BarCode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="service" Relationship="Self.FK_ServiceToken_service" FromRole="ServiceToken" ToRole="service" />
+        </EntityType>
+        <Association Name="FK_Addresses_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Addresses" Type="Self.Address" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Addresses_City">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="Addresses" Type="Self.Address" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Addresses_Goverment">
+          <End Role="Goverment" Type="Self.Goverment" Multiplicity="1" />
+          <End Role="Addresses" Type="Self.Address" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Person_Addresses">
+          <End Role="Addresses" Type="Self.Address" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Person_Church">
+          <End Role="Church" Type="Self.Church" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Person_Education">
+          <End Role="Education" Type="Self.Education" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Person_Khadma">
+          <End Role="Khadma" Type="Self.Khadma" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Person_Qualification">
+          <End Role="Qualification" Type="Self.Qualification" Multiplicity="0..1" />
+          <End Role="Person" Type="Self.Person" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ProfileServices_ProfileServices1">
+          <End Role="ProfileServices" Type="Self.ProfileService" Multiplicity="1" />
+          <End Role="ProfileServices1" Type="Self.ProfileService" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ProfileServices">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProfileServices1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProfileServices_service">
+          <End Role="service" Type="Self.service" Multiplicity="1" />
+          <End Role="ProfileServices" Type="Self.ProfileService" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ServiceToken_service">
+          <End Role="service" Type="Self.service" Multiplicity="1" />
+          <End Role="ServiceToken" Type="Self.ServiceToken" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="Entities">
+          <EntitySet Name="Addresses" EntityType="Self.Address" />
+          <EntitySet Name="Areas" EntityType="Self.Area" />
+          <EntitySet Name="Churches" EntityType="Self.Church" />
+          <EntitySet Name="Cities" EntityType="Self.City" />
+          <EntitySet Name="Educations" EntityType="Self.Education" />
+          <EntitySet Name="Goverments" EntityType="Self.Goverment" />
+          <EntitySet Name="Khadmas" EntityType="Self.Khadma" />
+          <EntitySet Name="Logins" EntityType="Self.Login" />
+          <EntitySet Name="People" EntityType="Self.Person" />
+          <EntitySet Name="ProfileServices" EntityType="Self.ProfileService" />
+          <EntitySet Name="Qualifications" EntityType="Self.Qualification" />
+          <EntitySet Name="services" EntityType="Self.service" />
+          <EntitySet Name="ServiceTokens" EntityType="Self.ServiceToken" />
+          <AssociationSet Name="FK_Addresses_Area" Association="Self.FK_Addresses_Area">
+            <End Role="Area" EntitySet="Areas" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Addresses_City" Association="Self.FK_Addresses_City">
+            <End Role="City" EntitySet="Cities" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Addresses_Goverment" Association="Self.FK_Addresses_Goverment">
+            <End Role="Goverment" EntitySet="Goverments" />
+            <End Role="Addresses" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Addresses" Association="Self.FK_Person_Addresses">
+            <End Role="Addresses" EntitySet="Addresses" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Church" Association="Self.FK_Person_Church">
+            <End Role="Church" EntitySet="Churches" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Education" Association="Self.FK_Person_Education">
+            <End Role="Education" EntitySet="Educations" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Khadma" Association="Self.FK_Person_Khadma">
+            <End Role="Khadma" EntitySet="Khadmas" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_Qualification" Association="Self.FK_Person_Qualification">
+            <End Role="Qualification" EntitySet="Qualifications" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileServices_ProfileServices1" Association="Self.FK_ProfileServices_ProfileServices1">
+            <End Role="ProfileServices" EntitySet="ProfileServices" />
+            <End Role="ProfileServices1" EntitySet="ProfileServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfileServices_service" Association="Self.FK_ProfileServices_service">
+            <End Role="service" EntitySet="services" />
+            <End Role="ProfileServices" EntitySet="ProfileServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServiceToken_service" Association="Self.FK_ServiceToken_service">
+            <End Role="service" EntitySet="services" />
+            <End Role="ServiceToken" EntitySet="ServiceTokens" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="admaaModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="admaaModel.Address">
+              <MappingFragment StoreEntitySet="Addresses">
+                <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Areas">
+            <EntityTypeMapping TypeName="admaaModel.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Churches">
+            <EntityTypeMapping TypeName="admaaModel.Church">
+              <MappingFragment StoreEntitySet="Church">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="admaaModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Educations">
+            <EntityTypeMapping TypeName="admaaModel.Education">
+              <MappingFragment StoreEntitySet="Education">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Goverments">
+            <EntityTypeMapping TypeName="admaaModel.Goverment">
+              <MappingFragment StoreEntitySet="Goverment">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Khadmas">
+            <EntityTypeMapping TypeName="admaaModel.Khadma">
+              <MappingFragment StoreEntitySet="Khadma">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="admaaModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="admaaModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RecognitionFather" ColumnName="RecognitionFather" />
+                <ScalarProperty Name="Khadem" ColumnName="Khadem" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="SocialStatus" ColumnName="SocialStatus" />
+                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="ServesID" ColumnName="ServesID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProfileServices">
+            <EntityTypeMapping TypeName="admaaModel.ProfileService">
+              <MappingFragment StoreEntitySet="ProfileServices">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="EnterDate" ColumnName="EnterDate" />
+                <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Qualifications">
+            <EntityTypeMapping TypeName="admaaModel.Qualification">
+              <MappingFragment StoreEntitySet="Qualification">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="services">
+            <EntityTypeMapping TypeName="admaaModel.service">
+              <MappingFragment StoreEntitySet="service">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServiceTokens">
+            <EntityTypeMapping TypeName="admaaModel.ServiceToken">
+              <MappingFragment StoreEntitySet="ServiceToken">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_Addresses_Area" TypeName="admaaModel.FK_Addresses_Area" StoreEntitySet="Addresses">
+            <EndProperty Name="Area">
+              <ScalarProperty Name="ID" ColumnName="AreaID" />
+            </EndProperty>
+            <EndProperty Name="Addresses">
+              <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="AreaID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Addresses_City" TypeName="admaaModel.FK_Addresses_City" StoreEntitySet="Addresses">
+            <EndProperty Name="City">
+              <ScalarProperty Name="ID" ColumnName="CityID" />
+            </EndProperty>
+            <EndProperty Name="Addresses">
+              <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="CityID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Addresses_Goverment" TypeName="admaaModel.FK_Addresses_Goverment" StoreEntitySet="Addresses">
+            <EndProperty Name="Goverment">
+              <ScalarProperty Name="ID" ColumnName="GovermentID" />
+            </EndProperty>
+            <EndProperty Name="Addresses">
+              <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Person_Addresses" TypeName="admaaModel.FK_Person_Addresses" StoreEntitySet="Person">
+            <EndProperty Name="Addresses">
+              <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="AddressID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Person_Church" TypeName="admaaModel.FK_Person_Church" StoreEntitySet="Person">
+            <EndProperty Name="Church">
+              <ScalarProperty Name="ID" ColumnName="CurchID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="CurchID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Person_Education" TypeName="admaaModel.FK_Person_Education" StoreEntitySet="Person">
+            <EndProperty Name="Education">
+              <ScalarProperty Name="ID" ColumnName="EducationID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="EducationID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Person_Khadma" TypeName="admaaModel.FK_Person_Khadma" StoreEntitySet="Person">
+            <EndProperty Name="Khadma">
+              <ScalarProperty Name="ID" ColumnName="KhadmaID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="KhadmaID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_Person_Qualification" TypeName="admaaModel.FK_Person_Qualification" StoreEntitySet="Person">
+            <EndProperty Name="Qualification">
+              <ScalarProperty Name="ID" ColumnName="QualificationID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition IsNull="false" ColumnName="QualificationID" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ProfileServices_ProfileServices1" TypeName="admaaModel.FK_ProfileServices_ProfileServices1" StoreEntitySet="ProfileServices">
+            <EndProperty Name="ProfileServices">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <EndProperty Name="ProfileServices1">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ProfileServices_service" TypeName="admaaModel.FK_ProfileServices_service" StoreEntitySet="ProfileServices">
+            <EndProperty Name="service">
+              <ScalarProperty Name="ID" ColumnName="ServiceID" />
+            </EndProperty>
+            <EndProperty Name="ProfileServices">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ServiceToken_service" TypeName="admaaModel.FK_ServiceToken_service" StoreEntitySet="ServiceToken">
+            <EndProperty Name="service">
+              <ScalarProperty Name="ID" ColumnName="ServiceID" />
+            </EndProperty>
+            <EndProperty Name="ServiceToken">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
