@@ -53,10 +53,9 @@ namespace MegaTalentService
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(384, 58);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(576, 87);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 121);
+            this.pictureBox1.Size = new System.Drawing.Size(249, 182);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -69,10 +68,9 @@ namespace MegaTalentService
             this.label3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(396, 181);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(594, 272);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 17);
+            this.label3.Size = new System.Drawing.Size(197, 25);
             this.label3.TabIndex = 14;
             this.label3.Text = "تسجيل الدخول لبدء الإستخدام";
             // 
@@ -83,10 +81,9 @@ namespace MegaTalentService
             this.Log_InCloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Log_InCloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Log_InCloseBtn.ForeColor = System.Drawing.Color.White;
-            this.Log_InCloseBtn.Location = new System.Drawing.Point(8, 8);
-            this.Log_InCloseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Log_InCloseBtn.Location = new System.Drawing.Point(12, 12);
             this.Log_InCloseBtn.Name = "Log_InCloseBtn";
-            this.Log_InCloseBtn.Size = new System.Drawing.Size(20, 26);
+            this.Log_InCloseBtn.Size = new System.Drawing.Size(30, 39);
             this.Log_InCloseBtn.TabIndex = 15;
             this.Log_InCloseBtn.Text = "X";
             this.Log_InCloseBtn.UseVisualStyleBackColor = false;
@@ -99,10 +96,9 @@ namespace MegaTalentService
             this.Log_InMinimizedBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Log_InMinimizedBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Log_InMinimizedBtn.ForeColor = System.Drawing.Color.White;
-            this.Log_InMinimizedBtn.Location = new System.Drawing.Point(37, 8);
-            this.Log_InMinimizedBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Log_InMinimizedBtn.Location = new System.Drawing.Point(56, 12);
             this.Log_InMinimizedBtn.Name = "Log_InMinimizedBtn";
-            this.Log_InMinimizedBtn.Size = new System.Drawing.Size(20, 25);
+            this.Log_InMinimizedBtn.Size = new System.Drawing.Size(30, 38);
             this.Log_InMinimizedBtn.TabIndex = 16;
             this.Log_InMinimizedBtn.Text = "_";
             this.Log_InMinimizedBtn.UseVisualStyleBackColor = false;
@@ -116,9 +112,10 @@ namespace MegaTalentService
             this.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginbtn.ForeColor = System.Drawing.Color.White;
-            this.loginbtn.Location = new System.Drawing.Point(240, 400);
+            this.loginbtn.Location = new System.Drawing.Point(360, 600);
+            this.loginbtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(440, 44);
+            this.loginbtn.Size = new System.Drawing.Size(660, 66);
             this.loginbtn.TabIndex = 17;
             this.loginbtn.Text = "تسجيل الدخول";
             this.loginbtn.UseVisualStyleBackColor = false;
@@ -131,10 +128,11 @@ namespace MegaTalentService
             this.passwordtxt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.passwordtxt.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.passwordtxt.ForeColor = System.Drawing.Color.DarkGray;
-            this.passwordtxt.Location = new System.Drawing.Point(239, 292);
+            this.passwordtxt.Location = new System.Drawing.Point(358, 438);
+            this.passwordtxt.Margin = new System.Windows.Forms.Padding(4);
             this.passwordtxt.Multiline = true;
             this.passwordtxt.Name = "passwordtxt";
-            this.passwordtxt.Size = new System.Drawing.Size(440, 45);
+            this.passwordtxt.Size = new System.Drawing.Size(660, 68);
             this.passwordtxt.TabIndex = 21;
             this.passwordtxt.Text = "كلمة المرور";
             this.passwordtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -147,9 +145,10 @@ namespace MegaTalentService
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(687, 247);
+            this.pictureBox2.Location = new System.Drawing.Point(1030, 370);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(45, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
@@ -159,9 +158,10 @@ namespace MegaTalentService
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(687, 307);
+            this.pictureBox3.Location = new System.Drawing.Point(1030, 460);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(45, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
@@ -178,10 +178,9 @@ namespace MegaTalentService
             this.SeePasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SeePasswordBtn.FlatAppearance.BorderSize = 0;
             this.SeePasswordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SeePasswordBtn.Location = new System.Drawing.Point(195, 295);
-            this.SeePasswordBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SeePasswordBtn.Location = new System.Drawing.Point(292, 442);
             this.SeePasswordBtn.Name = "SeePasswordBtn";
-            this.SeePasswordBtn.Size = new System.Drawing.Size(33, 33);
+            this.SeePasswordBtn.Size = new System.Drawing.Size(50, 50);
             this.SeePasswordBtn.TabIndex = 28;
             this.SeePasswordBtn.UseVisualStyleBackColor = false;
             this.SeePasswordBtn.Click += new System.EventHandler(this.SeePasswordBtn_Click);
@@ -194,10 +193,9 @@ namespace MegaTalentService
             this.NotSeePasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NotSeePasswordBtn.FlatAppearance.BorderSize = 0;
             this.NotSeePasswordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.NotSeePasswordBtn.Location = new System.Drawing.Point(195, 295);
-            this.NotSeePasswordBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NotSeePasswordBtn.Location = new System.Drawing.Point(292, 442);
             this.NotSeePasswordBtn.Name = "NotSeePasswordBtn";
-            this.NotSeePasswordBtn.Size = new System.Drawing.Size(33, 33);
+            this.NotSeePasswordBtn.Size = new System.Drawing.Size(50, 50);
             this.NotSeePasswordBtn.TabIndex = 29;
             this.NotSeePasswordBtn.UseVisualStyleBackColor = false;
             this.NotSeePasswordBtn.Click += new System.EventHandler(this.NotSeePasswordBtn_Click);
@@ -209,10 +207,11 @@ namespace MegaTalentService
             this.usernametxt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usernametxt.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernametxt.ForeColor = System.Drawing.Color.DarkGray;
-            this.usernametxt.Location = new System.Drawing.Point(239, 237);
+            this.usernametxt.Location = new System.Drawing.Point(358, 356);
+            this.usernametxt.Margin = new System.Windows.Forms.Padding(4);
             this.usernametxt.Multiline = true;
             this.usernametxt.Name = "usernametxt";
-            this.usernametxt.Size = new System.Drawing.Size(440, 45);
+            this.usernametxt.Size = new System.Drawing.Size(660, 68);
             this.usernametxt.TabIndex = 19;
             this.usernametxt.Text = "إسم المستخدم";
             this.usernametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -223,11 +222,10 @@ namespace MegaTalentService
             // 
             // Log_In
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(919, 525);
+            this.ClientSize = new System.Drawing.Size(1378, 828);
             this.Controls.Add(this.NotSeePasswordBtn);
             this.Controls.Add(this.SeePasswordBtn);
             this.Controls.Add(this.pictureBox3);
@@ -242,14 +240,12 @@ namespace MegaTalentService
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(1067, 600);
-            this.MinimumSize = new System.Drawing.Size(400, 400);
+            this.MaximumSize = new System.Drawing.Size(1600, 900);
+            this.MinimumSize = new System.Drawing.Size(600, 600);
             this.Name = "Log_In";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign In";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Log_In_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
