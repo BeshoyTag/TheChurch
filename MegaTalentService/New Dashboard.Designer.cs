@@ -65,11 +65,11 @@ namespace MegaTalentService
             this.panel1.Controls.Add(this.DashboardBtn);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1134, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(1701, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(146, 703);
+            this.panel1.Size = new System.Drawing.Size(219, 1054);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
@@ -80,10 +80,9 @@ namespace MegaTalentService
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 481);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(0, 722);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 60);
+            this.button1.Size = new System.Drawing.Size(219, 90);
             this.button1.TabIndex = 4;
             this.button1.Text = "  إنشاء حساب";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -99,10 +98,9 @@ namespace MegaTalentService
             this.DesignIDBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DesignIDBtn.ForeColor = System.Drawing.Color.White;
             this.DesignIDBtn.Image = ((System.Drawing.Image)(resources.GetObject("DesignIDBtn.Image")));
-            this.DesignIDBtn.Location = new System.Drawing.Point(0, 421);
-            this.DesignIDBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DesignIDBtn.Location = new System.Drawing.Point(0, 632);
             this.DesignIDBtn.Name = "DesignIDBtn";
-            this.DesignIDBtn.Size = new System.Drawing.Size(146, 60);
+            this.DesignIDBtn.Size = new System.Drawing.Size(219, 90);
             this.DesignIDBtn.TabIndex = 3;
             this.DesignIDBtn.Text = "  إنشاء كارنيه";
             this.DesignIDBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -112,10 +110,9 @@ namespace MegaTalentService
             // PnlNav
             // 
             this.PnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.PnlNav.Location = new System.Drawing.Point(144, 125);
-            this.PnlNav.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlNav.Location = new System.Drawing.Point(216, 188);
             this.PnlNav.Name = "PnlNav";
-            this.PnlNav.Size = new System.Drawing.Size(7, 147);
+            this.PnlNav.Size = new System.Drawing.Size(10, 220);
             this.PnlNav.TabIndex = 2;
             // 
             // SignOutBtn
@@ -127,10 +124,9 @@ namespace MegaTalentService
             this.SignOutBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignOutBtn.ForeColor = System.Drawing.Color.White;
             this.SignOutBtn.Image = ((System.Drawing.Image)(resources.GetObject("SignOutBtn.Image")));
-            this.SignOutBtn.Location = new System.Drawing.Point(0, 650);
-            this.SignOutBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SignOutBtn.Location = new System.Drawing.Point(0, 974);
             this.SignOutBtn.Name = "SignOutBtn";
-            this.SignOutBtn.Size = new System.Drawing.Size(146, 53);
+            this.SignOutBtn.Size = new System.Drawing.Size(219, 80);
             this.SignOutBtn.TabIndex = 1;
             this.SignOutBtn.Text = " تسجيل الخروج";
             this.SignOutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -145,10 +141,9 @@ namespace MegaTalentService
             this.ContactUsBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactUsBtn.ForeColor = System.Drawing.Color.White;
             this.ContactUsBtn.Image = ((System.Drawing.Image)(resources.GetObject("ContactUsBtn.Image")));
-            this.ContactUsBtn.Location = new System.Drawing.Point(4, 615);
-            this.ContactUsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ContactUsBtn.Location = new System.Drawing.Point(6, 922);
             this.ContactUsBtn.Name = "ContactUsBtn";
-            this.ContactUsBtn.Size = new System.Drawing.Size(146, 60);
+            this.ContactUsBtn.Size = new System.Drawing.Size(219, 90);
             this.ContactUsBtn.TabIndex = 1;
             this.ContactUsBtn.Text = "   تواصل معنا";
             this.ContactUsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -165,10 +160,9 @@ namespace MegaTalentService
             this.ServiceTakingBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServiceTakingBtn.ForeColor = System.Drawing.Color.White;
             this.ServiceTakingBtn.Image = ((System.Drawing.Image)(resources.GetObject("ServiceTakingBtn.Image")));
-            this.ServiceTakingBtn.Location = new System.Drawing.Point(0, 361);
-            this.ServiceTakingBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ServiceTakingBtn.Location = new System.Drawing.Point(0, 542);
             this.ServiceTakingBtn.Name = "ServiceTakingBtn";
-            this.ServiceTakingBtn.Size = new System.Drawing.Size(146, 60);
+            this.ServiceTakingBtn.Size = new System.Drawing.Size(219, 90);
             this.ServiceTakingBtn.TabIndex = 1;
             this.ServiceTakingBtn.Text = "     أخذ خدمة";
             this.ServiceTakingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -185,10 +179,9 @@ namespace MegaTalentService
             this.AddServiceBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddServiceBtn.ForeColor = System.Drawing.Color.White;
             this.AddServiceBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddServiceBtn.Image")));
-            this.AddServiceBtn.Location = new System.Drawing.Point(0, 301);
-            this.AddServiceBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.AddServiceBtn.Location = new System.Drawing.Point(0, 452);
             this.AddServiceBtn.Name = "AddServiceBtn";
-            this.AddServiceBtn.Size = new System.Drawing.Size(146, 60);
+            this.AddServiceBtn.Size = new System.Drawing.Size(219, 90);
             this.AddServiceBtn.TabIndex = 1;
             this.AddServiceBtn.Text = "    إضافة خدمة";
             this.AddServiceBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -205,10 +198,9 @@ namespace MegaTalentService
             this.EditInfoBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditInfoBtn.ForeColor = System.Drawing.Color.White;
             this.EditInfoBtn.Image = ((System.Drawing.Image)(resources.GetObject("EditInfoBtn.Image")));
-            this.EditInfoBtn.Location = new System.Drawing.Point(0, 241);
-            this.EditInfoBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.EditInfoBtn.Location = new System.Drawing.Point(0, 362);
             this.EditInfoBtn.Name = "EditInfoBtn";
-            this.EditInfoBtn.Size = new System.Drawing.Size(146, 60);
+            this.EditInfoBtn.Size = new System.Drawing.Size(219, 90);
             this.EditInfoBtn.TabIndex = 1;
             this.EditInfoBtn.Text = "    تعديل بيانات";
             this.EditInfoBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -225,10 +217,9 @@ namespace MegaTalentService
             this.InsertPersonBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InsertPersonBtn.ForeColor = System.Drawing.Color.White;
             this.InsertPersonBtn.Image = ((System.Drawing.Image)(resources.GetObject("InsertPersonBtn.Image")));
-            this.InsertPersonBtn.Location = new System.Drawing.Point(0, 181);
-            this.InsertPersonBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPersonBtn.Location = new System.Drawing.Point(0, 272);
             this.InsertPersonBtn.Name = "InsertPersonBtn";
-            this.InsertPersonBtn.Size = new System.Drawing.Size(146, 60);
+            this.InsertPersonBtn.Size = new System.Drawing.Size(219, 90);
             this.InsertPersonBtn.TabIndex = 1;
             this.InsertPersonBtn.Text = "    إدخال مخدوم";
             this.InsertPersonBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -245,10 +236,9 @@ namespace MegaTalentService
             this.DashboardBtn.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashboardBtn.ForeColor = System.Drawing.Color.White;
             this.DashboardBtn.Image = ((System.Drawing.Image)(resources.GetObject("DashboardBtn.Image")));
-            this.DashboardBtn.Location = new System.Drawing.Point(0, 121);
-            this.DashboardBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DashboardBtn.Location = new System.Drawing.Point(0, 182);
             this.DashboardBtn.Name = "DashboardBtn";
-            this.DashboardBtn.Size = new System.Drawing.Size(146, 60);
+            this.DashboardBtn.Size = new System.Drawing.Size(219, 90);
             this.DashboardBtn.TabIndex = 1;
             this.DashboardBtn.Text = "الصفحة الرئيسية";
             this.DashboardBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -262,9 +252,8 @@ namespace MegaTalentService
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(146, 121);
+            this.panel2.Size = new System.Drawing.Size(219, 182);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -273,10 +262,9 @@ namespace MegaTalentService
             this.label1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.label1.Location = new System.Drawing.Point(9, 89);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(14, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 26);
+            this.label1.Size = new System.Drawing.Size(194, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Data Scope";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -284,10 +272,9 @@ namespace MegaTalentService
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -296,26 +283,24 @@ namespace MegaTalentService
             // 
             this.PnlFormLoader.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlFormLoader.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PnlFormLoader.Location = new System.Drawing.Point(0, -17);
-            this.PnlFormLoader.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlFormLoader.Location = new System.Drawing.Point(0, -26);
             this.PnlFormLoader.Name = "PnlFormLoader";
-            this.PnlFormLoader.Size = new System.Drawing.Size(1134, 720);
+            this.PnlFormLoader.Size = new System.Drawing.Size(1701, 1080);
             this.PnlFormLoader.TabIndex = 4;
             this.PnlFormLoader.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormLoader_Paint);
             // 
             // New_Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1280, 703);
+            this.ClientSize = new System.Drawing.Size(1920, 1054);
             this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1280, 720);
-            this.MinimumSize = new System.Drawing.Size(400, 400);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(600, 600);
             this.Name = "New_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";

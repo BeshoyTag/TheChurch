@@ -210,7 +210,7 @@ namespace MegaTalentService
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-
+           
         }
 
         private void PnlFormLoader_Paint(object sender, PaintEventArgs e)
@@ -254,6 +254,22 @@ namespace MegaTalentService
             Register index = new Register();
             index.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Log_InMinimizedBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void AddServiceCloseBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

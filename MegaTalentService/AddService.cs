@@ -30,7 +30,8 @@ namespace MegaTalentService
             Addbtn.Enabled = false;
             RightPic.Hide();
             WrongPic.Hide();
-
+            label5.Hide();
+            otherserve.Hide();
 
             dataGridView1.Hide();
             label2.Hide();
@@ -53,7 +54,16 @@ namespace MegaTalentService
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.SelectedIndex == 5) 
+            {
+                label5.Visible = true;
+                otherserve.Visible = true;
+            }
+            else
+            {
+                label5.Visible = false;
+                otherserve.Visible = false;
+            }
         }
 
         private void AddService_Load(object sender, EventArgs e)
@@ -324,6 +334,16 @@ namespace MegaTalentService
 
         private void otherserve_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Log_InMinimizedBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            //WindowState = FormWindowState.Minimized;
+            New_Dashboard d = new New_Dashboard();
+            d.WindowState = FormWindowState.Minimized;
+
 
         }
     }

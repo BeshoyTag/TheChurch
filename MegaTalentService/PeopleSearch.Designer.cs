@@ -31,7 +31,7 @@ namespace MegaTalentService
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PeopleSearch));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.AddServiceCloseBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,10 +57,9 @@ namespace MegaTalentService
             this.label4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Aqua;
-            this.label4.Location = new System.Drawing.Point(573, 8);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(860, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 46);
+            this.label4.Size = new System.Drawing.Size(121, 69);
             this.label4.TabIndex = 28;
             this.label4.Text = "بحث";
             // 
@@ -70,10 +69,9 @@ namespace MegaTalentService
             this.AddServiceCloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddServiceCloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddServiceCloseBtn.ForeColor = System.Drawing.Color.White;
-            this.AddServiceCloseBtn.Location = new System.Drawing.Point(8, 8);
-            this.AddServiceCloseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddServiceCloseBtn.Location = new System.Drawing.Point(12, 12);
             this.AddServiceCloseBtn.Name = "AddServiceCloseBtn";
-            this.AddServiceCloseBtn.Size = new System.Drawing.Size(20, 26);
+            this.AddServiceCloseBtn.Size = new System.Drawing.Size(30, 40);
             this.AddServiceCloseBtn.TabIndex = 29;
             this.AddServiceCloseBtn.Text = "X";
             this.AddServiceCloseBtn.UseVisualStyleBackColor = true;
@@ -83,10 +81,9 @@ namespace MegaTalentService
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(397, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(596, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(260, 211);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -96,11 +93,10 @@ namespace MegaTalentService
             this.textBox1.BackColor = System.Drawing.Color.FloralWhite;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(288, 248);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(432, 382);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(576, 32);
+            this.textBox1.Size = new System.Drawing.Size(862, 47);
             this.textBox1.TabIndex = 32;
             this.textBox1.Text = "إبحث عن مخدوم ما بإستخدام بياناته";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -113,15 +109,14 @@ namespace MegaTalentService
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 315);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 485);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowTemplate.Height = 50;
-            this.dataGridView1.Size = new System.Drawing.Size(1118, 380);
+            this.dataGridView1.Size = new System.Drawing.Size(1677, 585);
             this.dataGridView1.TabIndex = 33;
             // 
             // label1
@@ -129,9 +124,10 @@ namespace MegaTalentService
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1058, 154);
+            this.label1.Location = new System.Drawing.Point(1587, 237);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 42;
             this.label1.Text = "نوع الكاميرا";
             // 
@@ -139,9 +135,10 @@ namespace MegaTalentService
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 66);
+            this.pictureBox3.Location = new System.Drawing.Point(57, 102);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(235, 213);
+            this.pictureBox3.Size = new System.Drawing.Size(350, 326);
             this.pictureBox3.TabIndex = 41;
             this.pictureBox3.TabStop = false;
             // 
@@ -149,9 +146,10 @@ namespace MegaTalentService
             // 
             this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDevice.FormattingEnabled = true;
-            this.cboDevice.Location = new System.Drawing.Point(812, 155);
+            this.cboDevice.Location = new System.Drawing.Point(1218, 238);
+            this.cboDevice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboDevice.Name = "cboDevice";
-            this.cboDevice.Size = new System.Drawing.Size(237, 21);
+            this.cboDevice.Size = new System.Drawing.Size(354, 28);
             this.cboDevice.TabIndex = 40;
             // 
             // OpenCamBtn
@@ -162,9 +160,10 @@ namespace MegaTalentService
             this.OpenCamBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OpenCamBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OpenCamBtn.ForeColor = System.Drawing.Color.White;
-            this.OpenCamBtn.Location = new System.Drawing.Point(879, 246);
+            this.OpenCamBtn.Location = new System.Drawing.Point(1318, 378);
+            this.OpenCamBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.OpenCamBtn.Name = "OpenCamBtn";
-            this.OpenCamBtn.Size = new System.Drawing.Size(169, 31);
+            this.OpenCamBtn.Size = new System.Drawing.Size(254, 48);
             this.OpenCamBtn.TabIndex = 39;
             this.OpenCamBtn.Text = "قم بالبحث الآن";
             this.OpenCamBtn.UseVisualStyleBackColor = true;
@@ -183,10 +182,10 @@ namespace MegaTalentService
             // 
             // PeopleSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(778, 720);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.cboDevice);
@@ -197,7 +196,6 @@ namespace MegaTalentService
             this.Controls.Add(this.AddServiceCloseBtn);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PeopleSearch";
             this.Text = "PeopleSearch";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PeopleSearch_FormClosing);
