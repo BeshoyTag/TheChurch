@@ -107,6 +107,7 @@ namespace MegaTalentService
             this.label6.Size = new System.Drawing.Size(39, 59);
             this.label6.TabIndex = 31;
             this.label6.Text = " ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox1
             // 

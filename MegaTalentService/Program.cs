@@ -15,7 +15,7 @@ namespace MegaTalentService
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Log_In());
+            Application.Run(new New_Dashboard());
         
         }
     }

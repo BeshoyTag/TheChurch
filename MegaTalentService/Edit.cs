@@ -114,8 +114,9 @@ namespace MegaTalentService
 
             this.dataGridView1.RightToLeft = RightToLeft.Yes;
             LoadData();
+            textBox17.Text = "0";
 
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -548,6 +549,11 @@ namespace MegaTalentService
             {
                 errorProvider2.Clear();
             }
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
