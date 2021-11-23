@@ -216,7 +216,7 @@ int Record_Id;
         private void InsertPerson_Load(object sender, EventArgs e)
         {
             //button3.Visible = false;
-
+            textBox17.Text = "0";
             refreshData();
             //textBox1.ReadOnly = true;
         }
@@ -543,6 +543,11 @@ int Record_Id;
             {
                 errorProvider4.Clear();
             }
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -250,6 +250,7 @@ namespace MegaTalentService
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(1149, 807);
@@ -353,7 +354,7 @@ namespace MegaTalentService
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "The_Dashboard";
-            this.Text = "The_Dashboard";
+            this.Text = "`";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.The_Dashboard_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.The_Dashboard_FormClosed);
             this.Load += new System.EventHandler(this.The_Dashboard_Load);

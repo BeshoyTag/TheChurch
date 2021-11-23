@@ -104,10 +104,11 @@ namespace MegaTalentService
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(47, 14);
+            this.radioButton2.Location = new System.Drawing.Point(70, 22);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton2.Size = new System.Drawing.Size(58, 30);
+            this.radioButton2.Size = new System.Drawing.Size(85, 41);
             this.radioButton2.TabIndex = 137;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "أنثي";
@@ -120,10 +121,11 @@ namespace MegaTalentService
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(163, 10);
+            this.radioButton1.Location = new System.Drawing.Point(244, 15);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton1.Size = new System.Drawing.Size(57, 30);
+            this.radioButton1.Size = new System.Drawing.Size(82, 41);
             this.radioButton1.TabIndex = 136;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "ذكر";
@@ -131,9 +133,10 @@ namespace MegaTalentService
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(25, 165);
+            this.pictureBox2.Location = new System.Drawing.Point(38, 254);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(191, 270);
+            this.pictureBox2.Size = new System.Drawing.Size(286, 415);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 135;
             this.pictureBox2.TabStop = false;
@@ -144,46 +147,55 @@ namespace MegaTalentService
             this.label19.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(1055, 344);
+            this.label19.Location = new System.Drawing.Point(1582, 529);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 24);
+            this.label19.Size = new System.Drawing.Size(80, 32);
             this.label19.TabIndex = 133;
             this.label19.Text = "العنوان";
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(749, 385);
+            this.comboBox2.Location = new System.Drawing.Point(1124, 592);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(273, 28);
+            this.comboBox2.Size = new System.Drawing.Size(408, 37);
             this.comboBox2.TabIndex = 132;
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(237, 107);
+            this.comboBox5.Location = new System.Drawing.Point(356, 165);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(273, 28);
+            this.comboBox5.Size = new System.Drawing.Size(408, 37);
             this.comboBox5.TabIndex = 131;
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(237, 281);
+            this.comboBox3.Location = new System.Drawing.Point(356, 432);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(273, 28);
+            this.comboBox3.Size = new System.Drawing.Size(408, 37);
             this.comboBox3.TabIndex = 130;
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(749, 429);
+            this.comboBox4.Location = new System.Drawing.Point(1124, 660);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(273, 28);
+            this.comboBox4.Size = new System.Drawing.Size(408, 37);
             this.comboBox4.TabIndex = 129;
             // 
             // label18
@@ -192,9 +204,10 @@ namespace MegaTalentService
             this.label18.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(1022, 432);
+            this.label18.Location = new System.Drawing.Point(1533, 665);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(108, 24);
+            this.label18.Size = new System.Drawing.Size(166, 32);
             this.label18.TabIndex = 128;
             this.label18.Text = "الكنيسه التابع لها";
             // 
@@ -204,9 +217,10 @@ namespace MegaTalentService
             this.label17.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(529, 109);
+            this.label17.Location = new System.Drawing.Point(794, 168);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(105, 24);
+            this.label17.Size = new System.Drawing.Size(163, 32);
             this.label17.TabIndex = 127;
             this.label17.Text = "المؤهل الدراسي";
             // 
@@ -216,20 +230,22 @@ namespace MegaTalentService
             this.label16.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(529, 284);
+            this.label16.Location = new System.Drawing.Point(836, 437);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(112, 24);
+            this.label16.Size = new System.Drawing.Size(92, 32);
             this.label16.TabIndex = 126;
-            this.label16.Text = "الاجتماع التابع له";
+            this.label16.Text = "الاجتماع";
             // 
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(749, 473);
+            this.textBox11.Location = new System.Drawing.Point(1124, 728);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox11.Size = new System.Drawing.Size(273, 25);
+            this.textBox11.Size = new System.Drawing.Size(408, 36);
             this.textBox11.TabIndex = 125;
             // 
             // label14
@@ -238,20 +254,22 @@ namespace MegaTalentService
             this.label14.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1029, 479);
+            this.label14.Location = new System.Drawing.Point(1544, 737);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 24);
+            this.label14.Size = new System.Drawing.Size(136, 32);
             this.label14.TabIndex = 124;
             this.label14.Text = "أب الإعتراف";
             // 
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(237, 410);
+            this.textBox10.Location = new System.Drawing.Point(356, 631);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox10.Size = new System.Drawing.Size(273, 27);
+            this.textBox10.Size = new System.Drawing.Size(408, 39);
             this.textBox10.TabIndex = 123;
             // 
             // label13
@@ -260,20 +278,22 @@ namespace MegaTalentService
             this.label13.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(564, 415);
+            this.label13.Location = new System.Drawing.Point(846, 638);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 24);
+            this.label13.Size = new System.Drawing.Size(101, 32);
             this.label13.TabIndex = 122;
             this.label13.Text = "ملاحظات";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(237, 322);
+            this.textBox6.Location = new System.Drawing.Point(356, 495);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox6.Size = new System.Drawing.Size(273, 25);
+            this.textBox6.Size = new System.Drawing.Size(408, 36);
             this.textBox6.TabIndex = 119;
             // 
             // label11
@@ -282,20 +302,22 @@ namespace MegaTalentService
             this.label11.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(546, 322);
+            this.label11.Location = new System.Drawing.Point(819, 495);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 24);
+            this.label11.Size = new System.Drawing.Size(144, 32);
             this.label11.TabIndex = 118;
             this.label11.Text = "الخادم المسؤل";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(237, 367);
+            this.textBox2.Location = new System.Drawing.Point(356, 565);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(273, 25);
+            this.textBox2.Size = new System.Drawing.Size(408, 36);
             this.textBox2.TabIndex = 117;
             // 
             // label10
@@ -304,9 +326,10 @@ namespace MegaTalentService
             this.label10.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(533, 367);
+            this.label10.Location = new System.Drawing.Point(800, 565);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 24);
+            this.label10.Size = new System.Drawing.Size(169, 32);
             this.label10.TabIndex = 116;
             this.label10.Text = "البريد الالكتروني";
             // 
@@ -314,27 +337,31 @@ namespace MegaTalentService
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(749, 107);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1124, 165);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(273, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(408, 35);
             this.dateTimePicker1.TabIndex = 115;
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(237, 65);
+            this.comboBox1.Location = new System.Drawing.Point(356, 100);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 28);
+            this.comboBox1.Size = new System.Drawing.Size(408, 37);
             this.comboBox1.TabIndex = 114;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(749, 192);
+            this.textBox3.Location = new System.Drawing.Point(1124, 295);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(273, 25);
+            this.textBox3.Size = new System.Drawing.Size(408, 36);
             this.textBox3.TabIndex = 113;
             // 
             // label3
@@ -343,9 +370,10 @@ namespace MegaTalentService
             this.label3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1039, 195);
+            this.label3.Location = new System.Drawing.Point(1558, 300);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
+            this.label3.Size = new System.Drawing.Size(122, 32);
             this.label3.TabIndex = 112;
             this.label3.Text = "رقم التليفون";
             // 
@@ -358,9 +386,10 @@ namespace MegaTalentService
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(568, 509);
+            this.button1.Location = new System.Drawing.Point(852, 783);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 36);
+            this.button1.Size = new System.Drawing.Size(262, 55);
             this.button1.TabIndex = 111;
             this.button1.Text = "حفظ";
             this.button1.UseVisualStyleBackColor = true;
@@ -369,11 +398,12 @@ namespace MegaTalentService
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(749, 341);
+            this.textBox9.Location = new System.Drawing.Point(1124, 525);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox9.Size = new System.Drawing.Size(273, 25);
+            this.textBox9.Size = new System.Drawing.Size(408, 36);
             this.textBox9.TabIndex = 110;
             // 
             // label9
@@ -382,9 +412,10 @@ namespace MegaTalentService
             this.label9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1045, 385);
+            this.label9.Location = new System.Drawing.Point(1568, 592);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 24);
+            this.label9.Size = new System.Drawing.Size(96, 32);
             this.label9.TabIndex = 109;
             this.label9.Text = "المحافظة";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -392,10 +423,11 @@ namespace MegaTalentService
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(237, 239);
+            this.textBox8.Location = new System.Drawing.Point(356, 368);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(273, 25);
+            this.textBox8.Size = new System.Drawing.Size(408, 36);
             this.textBox8.TabIndex = 108;
             // 
             // label8
@@ -404,9 +436,10 @@ namespace MegaTalentService
             this.label8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(564, 242);
+            this.label8.Location = new System.Drawing.Point(846, 372);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 24);
+            this.label8.Size = new System.Drawing.Size(76, 32);
             this.label8.TabIndex = 107;
             this.label8.Text = "الراتب";
             // 
@@ -416,20 +449,22 @@ namespace MegaTalentService
             this.label7.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1067, 239);
+            this.label7.Location = new System.Drawing.Point(1600, 368);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 24);
+            this.label7.Size = new System.Drawing.Size(62, 32);
             this.label7.TabIndex = 106;
             this.label7.Text = "النوع";
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(237, 195);
+            this.textBox5.Location = new System.Drawing.Point(356, 300);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox5.Size = new System.Drawing.Size(273, 25);
+            this.textBox5.Size = new System.Drawing.Size(408, 36);
             this.textBox5.TabIndex = 105;
             // 
             // label5
@@ -438,9 +473,10 @@ namespace MegaTalentService
             this.label5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(529, 198);
+            this.label5.Location = new System.Drawing.Point(794, 305);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 24);
+            this.label5.Size = new System.Drawing.Size(169, 32);
             this.label5.TabIndex = 104;
             this.label5.Text = "الحالة الاجتماعية";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -451,9 +487,10 @@ namespace MegaTalentService
             this.label6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(533, 65);
+            this.label6.Location = new System.Drawing.Point(800, 100);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 24);
+            this.label6.Size = new System.Drawing.Size(165, 32);
             this.label6.TabIndex = 103;
             this.label6.Text = "المرحله التعليمية";
             // 
@@ -463,19 +500,21 @@ namespace MegaTalentService
             this.label2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1039, 105);
+            this.label2.Location = new System.Drawing.Point(1558, 162);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 24);
+            this.label2.Size = new System.Drawing.Size(130, 32);
             this.label2.TabIndex = 100;
             this.label2.Text = "تاريخ الميلاد";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(381, 456);
+            this.textBox1.Location = new System.Drawing.Point(572, 702);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 25);
+            this.textBox1.Size = new System.Drawing.Size(192, 36);
             this.textBox1.TabIndex = 99;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -485,9 +524,10 @@ namespace MegaTalentService
             this.label1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1067, 65);
+            this.label1.Location = new System.Drawing.Point(1600, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 24);
+            this.label1.Size = new System.Drawing.Size(64, 32);
             this.label1.TabIndex = 98;
             this.label1.Text = "الاسم";
             // 
@@ -501,10 +541,11 @@ namespace MegaTalentService
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(152, 12);
+            this.radioButton5.Location = new System.Drawing.Point(228, 18);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton5.Size = new System.Drawing.Size(42, 30);
+            this.radioButton5.Size = new System.Drawing.Size(61, 41);
             this.radioButton5.TabIndex = 153;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "أم";
@@ -516,10 +557,11 @@ namespace MegaTalentService
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.ForeColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(216, 12);
+            this.radioButton6.Location = new System.Drawing.Point(324, 18);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton6.Size = new System.Drawing.Size(51, 30);
+            this.radioButton6.Size = new System.Drawing.Size(73, 41);
             this.radioButton6.TabIndex = 152;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "أب";
@@ -531,10 +573,11 @@ namespace MegaTalentService
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(-1, 12);
+            this.radioButton3.Location = new System.Drawing.Point(-2, 18);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton3.Size = new System.Drawing.Size(53, 30);
+            this.radioButton3.Size = new System.Drawing.Size(78, 41);
             this.radioButton3.TabIndex = 151;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "إبنة";
@@ -546,10 +589,11 @@ namespace MegaTalentService
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(75, 11);
+            this.radioButton4.Location = new System.Drawing.Point(112, 17);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton4.Size = new System.Drawing.Size(52, 30);
+            this.radioButton4.Size = new System.Drawing.Size(75, 41);
             this.radioButton4.TabIndex = 150;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "إبن";
@@ -560,9 +604,10 @@ namespace MegaTalentService
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(559, 456);
+            this.label12.Location = new System.Drawing.Point(838, 702);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 24);
+            this.label12.Size = new System.Drawing.Size(109, 32);
             this.label12.TabIndex = 120;
             this.label12.Text = "رقم البحث";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -570,11 +615,12 @@ namespace MegaTalentService
             // textBox14
             // 
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(237, 150);
+            this.textBox14.Location = new System.Drawing.Point(356, 231);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox14.Size = new System.Drawing.Size(273, 25);
+            this.textBox14.Size = new System.Drawing.Size(408, 36);
             this.textBox14.TabIndex = 155;
             // 
             // label21
@@ -583,9 +629,10 @@ namespace MegaTalentService
             this.label21.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(564, 150);
+            this.label21.Location = new System.Drawing.Point(846, 231);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 24);
+            this.label21.Size = new System.Drawing.Size(82, 32);
             this.label21.TabIndex = 154;
             this.label21.Text = "الوظيفة";
             this.label21.Click += new System.EventHandler(this.label21_Click);
@@ -596,9 +643,10 @@ namespace MegaTalentService
             this.label20.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(1040, 150);
+            this.label20.Location = new System.Drawing.Point(1560, 231);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(82, 24);
+            this.label20.Size = new System.Drawing.Size(128, 32);
             this.label20.TabIndex = 156;
             this.label20.Text = "الرقم القومي";
             // 
@@ -608,10 +656,9 @@ namespace MegaTalentService
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton6);
             this.panel1.Controls.Add(this.radioButton5);
-            this.panel1.Location = new System.Drawing.Point(741, 284);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(1112, 437);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 42);
+            this.panel1.Size = new System.Drawing.Size(418, 65);
             this.panel1.TabIndex = 158;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -621,9 +668,10 @@ namespace MegaTalentService
             this.label15.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1061, 295);
+            this.label15.Location = new System.Drawing.Point(1592, 454);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 24);
+            this.label15.Size = new System.Drawing.Size(71, 32);
             this.label15.TabIndex = 159;
             this.label15.Text = "الصفة";
             // 
@@ -637,9 +685,10 @@ namespace MegaTalentService
             this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackBtn.ForeColor = System.Drawing.Color.White;
-            this.BackBtn.Location = new System.Drawing.Point(8, 625);
+            this.BackBtn.Location = new System.Drawing.Point(12, 962);
+            this.BackBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(77, 68);
+            this.BackBtn.Size = new System.Drawing.Size(116, 105);
             this.BackBtn.TabIndex = 161;
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
@@ -650,10 +699,9 @@ namespace MegaTalentService
             this.DashboardCloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashboardCloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashboardCloseBtn.ForeColor = System.Drawing.Color.White;
-            this.DashboardCloseBtn.Location = new System.Drawing.Point(8, 8);
-            this.DashboardCloseBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DashboardCloseBtn.Location = new System.Drawing.Point(12, 12);
             this.DashboardCloseBtn.Name = "DashboardCloseBtn";
-            this.DashboardCloseBtn.Size = new System.Drawing.Size(20, 26);
+            this.DashboardCloseBtn.Size = new System.Drawing.Size(30, 40);
             this.DashboardCloseBtn.TabIndex = 162;
             this.DashboardCloseBtn.Text = "X";
             this.DashboardCloseBtn.UseVisualStyleBackColor = true;
@@ -665,10 +713,9 @@ namespace MegaTalentService
             this.label23.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Aqua;
-            this.label23.Location = new System.Drawing.Point(528, 14);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(792, 22);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(204, 31);
+            this.label23.Size = new System.Drawing.Size(305, 46);
             this.label23.TabIndex = 164;
             this.label23.Text = "إضافة فرد إلي الأسرة";
             // 
@@ -682,9 +729,10 @@ namespace MegaTalentService
             this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpen.ForeColor = System.Drawing.Color.White;
-            this.btnOpen.Location = new System.Drawing.Point(134, 97);
+            this.btnOpen.Location = new System.Drawing.Point(201, 149);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(47, 45);
+            this.btnOpen.Size = new System.Drawing.Size(70, 69);
             this.btnOpen.TabIndex = 165;
             this.btnOpen.UseVisualStyleBackColor = false;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
@@ -693,10 +741,9 @@ namespace MegaTalentService
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(441, 1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(662, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(53, 52);
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
             this.pictureBox4.TabIndex = 202;
             this.pictureBox4.TabStop = false;
             // 
@@ -710,9 +757,10 @@ namespace MegaTalentService
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(39, 94);
+            this.button2.Location = new System.Drawing.Point(58, 145);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 45);
+            this.button2.Size = new System.Drawing.Size(70, 69);
             this.button2.TabIndex = 203;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -720,22 +768,20 @@ namespace MegaTalentService
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(749, 65);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Location = new System.Drawing.Point(1124, 100);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox7.Size = new System.Drawing.Size(273, 25);
+            this.textBox7.Size = new System.Drawing.Size(408, 36);
             this.textBox7.TabIndex = 204;
             // 
             // textBox13
             // 
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(749, 150);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox13.Location = new System.Drawing.Point(1124, 231);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(273, 25);
+            this.textBox13.Size = new System.Drawing.Size(408, 36);
             this.textBox13.TabIndex = 205;
             this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
@@ -743,10 +789,9 @@ namespace MegaTalentService
             // 
             this.panel2.Controls.Add(this.radioButton2);
             this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Location = new System.Drawing.Point(763, 226);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(1144, 348);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(245, 47);
+            this.panel2.Size = new System.Drawing.Size(368, 72);
             this.panel2.TabIndex = 206;
             // 
             // errorProvider1
@@ -763,10 +808,10 @@ namespace MegaTalentService
             // 
             // InsertChardren
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(924, 512);
+            this.ClientSize = new System.Drawing.Size(1762, 1094);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox7);
@@ -818,6 +863,7 @@ namespace MegaTalentService
             this.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "InsertChardren";
             this.Text = "InsertChildren";
             this.Load += new System.EventHandler(this.InsertChardren_Load);

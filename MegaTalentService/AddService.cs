@@ -41,6 +41,7 @@ namespace MegaTalentService
             Addbtn.Hide();
             button1.Hide();
 
+            
         }
 
  
@@ -54,7 +55,7 @@ namespace MegaTalentService
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 5) 
+            if (comboBox1.SelectedIndex == 0 && comboBox1.Visible==true) 
             {
                 label5.Visible = true;
                 otherserve.Visible = true;
@@ -70,7 +71,7 @@ namespace MegaTalentService
         {
 
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from service", con);
+            SqlDataAdapter da = new SqlDataAdapter("select * from service order by id desc", con);
 
             da.Fill(dt);
             comboBox1.DataSource = dt;
