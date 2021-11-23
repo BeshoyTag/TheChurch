@@ -32,7 +32,9 @@ namespace MegaTalentService
             pictureBox3.Hide();
             label7.Hide();
             textBox1.Hide();
-          
+            textBox3.Hide();
+            label8.Hide();
+
             GraphicsPath gp = new GraphicsPath();
             gp.AddEllipse(pictureBox3.DisplayRectangle);
             pictureBox3.Region = new Region(gp);
@@ -165,6 +167,8 @@ namespace MegaTalentService
                 label7.Visible = true;
                 textBox1.Visible = true;
                 pictureBox3.Visible = false;
+                textBox3.Visible=true;
+                label8.Visible = true;
             }
             else
             {
@@ -176,13 +180,15 @@ namespace MegaTalentService
                 SaveBtn.Hide();
                 label7.Hide();
                 textBox1.Hide();
+                textBox3.Hide();
+                label8.Hide();
             }
             con.Close();
 
     
 
             dt.Clear();
-            da = new SqlDataAdapter("Select(SELECT TOP 1 p.Name PersonName FROM dbo.Person p WHERE p.BarCode=Person.BarCode ORDER BY p.PersonType) , Person.BarCode,dbo.service.Name ServiceName ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note FROM dbo.Person LEFT JOIN dbo.ServiceToken ON ServiceToken.BarCode = Person.BarCode LEFT JOIN dbo.service ON service.ID = ServiceToken.ServiceID WHERE Person.BarCode Like '%" + textBox2.Text + "%' GROUP by Person.BarCode,dbo.service.Name ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note  order by dbo.ServiceToken.DateTime desc", con);
+            da = new SqlDataAdapter("Select(SELECT TOP 1 p.Name PersonName FROM dbo.Person p WHERE p.BarCode=Person.BarCode ORDER BY p.PersonType) , Person.BarCode,dbo.service.Name ServiceName, dbo.ServiceToken.Count ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note FROM dbo.Person LEFT JOIN dbo.ServiceToken ON ServiceToken.BarCode = Person.BarCode LEFT JOIN dbo.service ON service.ID = ServiceToken.ServiceID WHERE Person.BarCode Like '%" + textBox2.Text + "%' GROUP by Person.BarCode,dbo.service.Name, dbo.ServiceToken.Count ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note  order by dbo.ServiceToken.DateTime desc", con);
            // da = new SqlDataAdapter("select * from Person where BarCode Like '%" + textBox2.Text + "%'", con);
             da.Fill(dt);
             this.dataGridView1.DataSource = dt;
@@ -193,14 +199,16 @@ namespace MegaTalentService
             dataGridView1.Columns[0].HeaderText = "الاسم";            
             dataGridView1.Columns[1].HeaderText = "رقم البحث"; 
             dataGridView1.Columns[2].HeaderText = "الخدمة"; 
-            dataGridView1.Columns[3].HeaderText = " تاريخ اخذ الخدمة"; 
-            dataGridView1.Columns[4].HeaderText = "الملاحظات";
+            dataGridView1.Columns[3].HeaderText = "الكمية";
+            dataGridView1.Columns[4].HeaderText = " تاريخ اخذ الخدمة"; 
+            dataGridView1.Columns[5].HeaderText = "الجهة المانحة";
             //
             dataGridView1.Columns[0].Width = 200;
             dataGridView1.Columns[1].Width = 100;
             dataGridView1.Columns[2].Width = 150;
-            dataGridView1.Columns[3].Width = 200;
-            dataGridView1.Columns[4].Width = 400;
+            dataGridView1.Columns[3].Width = 100;
+            dataGridView1.Columns[4].Width = 200;
+            dataGridView1.Columns[5].Width = 400;
 
         }
 
@@ -223,20 +231,21 @@ namespace MegaTalentService
 
                     con.Open();
                     SqlCommand cmd = new SqlCommand
-                    ("insert into ServiceToken (BarCode,ServiceID,DateTime,Note)values" +
+                    ("insert into ServiceToken (BarCode,ServiceID,DateTime,Note,Count)values" +
                     "(N'" + textBox2.Text+"','" + comboBox1.SelectedValue + "','"
-                    + dateTimePicker1.Text+ "',N'" + textBox1.Text + "')", con);
+                    + dateTimePicker1.Text+ "',N'" + textBox1.Text + "','" + textBox3.Text + "')", con);
              
                     MessageBox.Show("تم حفظ الخدمة");
 
                     textBox1.Text = "";
+                    textBox3.Text = "";
 
                 cmd.ExecuteNonQuery();
                     con.Close();
               
                 dt.Clear();
                 //  da = new SqlDataAdapter("Select(SELECT TOP 1 p.Name PersonName FROM dbo.Person p WHERE p.BarCode=Person.BarCode ORDER BY p.PersonType) , " +"Person.BarCode,dbo.service.Name ServiceName ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note FROM dbo.Person LEFT JOIN dbo.ServiceToken ON ServiceToken.BarCode = Person.BarCode LEFT JOIN dbo.service ON service.ID = ServiceToken.ServiceID WHERE Person.BarCode Like '%" + textBox2.Text + "%' GROUP by Person.BarCode,dbo.service.Name ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note ", con);
-                da = new SqlDataAdapter("Select(SELECT TOP 1 p.Name PersonName FROM dbo.Person p WHERE p.BarCode=Person.BarCode ORDER BY p.PersonType) , Person.BarCode,dbo.service.Name ServiceName ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note FROM dbo.Person LEFT JOIN dbo.ServiceToken ON ServiceToken.BarCode = Person.BarCode LEFT JOIN dbo.service ON service.ID = ServiceToken.ServiceID WHERE Person.BarCode Like '%" + textBox2.Text + "%' GROUP by Person.BarCode,dbo.service.Name ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note order by dbo.ServiceToken.DateTime desc", con);
+                da = new SqlDataAdapter("Select(SELECT TOP 1 p.Name PersonName FROM dbo.Person p WHERE p.BarCode=Person.BarCode ORDER BY p.PersonType) , Person.BarCode,dbo.service.Name ServiceName, dbo.ServiceToken.Count ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note FROM dbo.Person LEFT JOIN dbo.ServiceToken ON ServiceToken.BarCode = Person.BarCode LEFT JOIN dbo.service ON service.ID = ServiceToken.ServiceID WHERE Person.BarCode Like '%" + textBox2.Text + "%' GROUP by Person.BarCode,dbo.service.Name, dbo.ServiceToken.Count ,dbo.ServiceToken.DateTime, dbo.ServiceToken.Note order by dbo.ServiceToken.DateTime desc", con);
 
                 da.Fill(dt);
                 this.dataGridView1.DataSource = dt;
@@ -247,8 +256,9 @@ namespace MegaTalentService
                 dataGridView1.Columns[0].HeaderText = "الاسم";
                 dataGridView1.Columns[1].HeaderText = "رقم البحث";
                 dataGridView1.Columns[2].HeaderText = "الخدمة";
-                dataGridView1.Columns[3].HeaderText = " تاريخ اخذ الخدمة";
-                dataGridView1.Columns[4].HeaderText = "الملاحظات";
+                dataGridView1.Columns[3].HeaderText = "الكمية";
+                dataGridView1.Columns[4].HeaderText = " تاريخ اخذ الخدمة";
+                dataGridView1.Columns[5].HeaderText = "الجهة المانحة";
                 //
             }
             else
@@ -270,6 +280,14 @@ namespace MegaTalentService
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            videoCaptureDevice.Stop();
+            pictureBox3.Image = null;
+            pictureBox3.Hide();
+            textBox2.ForeColor = Color.Aqua;
         }
     }
   

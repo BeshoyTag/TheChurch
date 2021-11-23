@@ -75,11 +75,12 @@ namespace MegaTalentService
             
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
 
-                ($@"[الأسم] LIKE'%{(textBox1.Text)}%'   
+          (
+                $@"[الأسم] LIKE'%{(textBox1.Text)}%'   
                     OR [رقم التليفون]lIKE '%{textBox1.Text}%'
                        OR[رقم التليفون الارضي]lIKE '%{textBox1.Text}%'
                             OR [الكنيسة]lIKE '%{textBox1.Text}%'
-                                OR[رقم البحث]lIKE '%{textBox1.Text}%'
+                                OR[رقم البحث] lIKE '%{textBox1.Text}%'
                                   OR [المرحلة التعليميه]lIKE '%{textBox1.Text}%'
                                      OR [المؤهل الدراسي]lIKE '%{textBox1.Text}%'
                                         OR [الخادم المسؤال]lIKE '%{textBox1.Text}%'
@@ -131,6 +132,11 @@ namespace MegaTalentService
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
+            videoCaptureDevice.Stop();
+            pictureBox3.Image = null;
+            pictureBox3.Hide();
+            textBox1.ForeColor = Color.Aqua;
+
             if (textBox1.Text == "إبحث عن مخدوم ما بإستخدام بياناته")
             {
                 textBox1.Text = "";
@@ -168,7 +174,6 @@ namespace MegaTalentService
                         textBox1.ForeColor = Color.Aqua;
                         dataGridView1.Visible = true;
                         ColumnsSize();
-
                     }
 
                 }

@@ -980,9 +980,9 @@ namespace MegaTalentService
             this.label26.Location = new System.Drawing.Point(765, 475);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(275, 37);
+            this.label26.Size = new System.Drawing.Size(270, 37);
             this.label26.TabIndex = 208;
-            this.label26.Text = "ذوي الإجتماعات الخاصة";
+            this.label26.Text = "ذوي الإحتياجات الخاصة";
             this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // panel2

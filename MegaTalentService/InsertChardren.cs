@@ -25,7 +25,7 @@ namespace MegaTalentService
             InitializeComponent();
             radioButton4.Checked = true;
             radioButton1.Checked = true;
-            textBox1.Enabled = false;
+           // textBox1.Enabled = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace MegaTalentService
             {
                 textBox1.Focus();
                 errorProvider3.RightToLeft = true;
-                errorProvider3.SetError(textBox1, "برجاء ادخال البحث");
+                errorProvider3.SetError(textBox1, "برجاء ادخال رقم البحث");
 
             }
             else

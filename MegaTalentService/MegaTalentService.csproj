@@ -61,7 +61,8 @@
     <ManifestKeyFile>MegaTalentService_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Data Scope2.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -243,9 +244,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Image\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data Scope2.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

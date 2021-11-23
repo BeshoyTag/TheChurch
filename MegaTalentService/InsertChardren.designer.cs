@@ -104,7 +104,7 @@ namespace MegaTalentService
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(70, 22);
+            this.radioButton2.Location = new System.Drawing.Point(70, 15);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -541,14 +541,14 @@ namespace MegaTalentService
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(228, 18);
+            this.radioButton5.Location = new System.Drawing.Point(204, 14);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton5.Size = new System.Drawing.Size(61, 41);
+            this.radioButton5.Size = new System.Drawing.Size(101, 41);
             this.radioButton5.TabIndex = 153;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "أم";
+            this.radioButton5.Text = "زوجة";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton6
@@ -557,14 +557,14 @@ namespace MegaTalentService
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.ForeColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(324, 18);
+            this.radioButton6.Location = new System.Drawing.Point(325, 14);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton6.Size = new System.Drawing.Size(73, 41);
+            this.radioButton6.Size = new System.Drawing.Size(89, 41);
             this.radioButton6.TabIndex = 152;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "أب";
+            this.radioButton6.Text = "زوج";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -573,14 +573,14 @@ namespace MegaTalentService
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(-2, 18);
+            this.radioButton3.Location = new System.Drawing.Point(6, 14);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton3.Size = new System.Drawing.Size(78, 41);
+            this.radioButton3.Size = new System.Drawing.Size(88, 41);
             this.radioButton3.TabIndex = 151;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "إبنة";
+            this.radioButton3.Text = "طفلة";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -589,14 +589,14 @@ namespace MegaTalentService
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(112, 17);
+            this.radioButton4.Location = new System.Drawing.Point(102, 14);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radioButton4.Size = new System.Drawing.Size(75, 41);
+            this.radioButton4.Size = new System.Drawing.Size(85, 41);
             this.radioButton4.TabIndex = 150;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "إبن";
+            this.radioButton4.Text = "طفل";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // label12
